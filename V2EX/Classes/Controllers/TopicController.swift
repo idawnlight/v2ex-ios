@@ -356,9 +356,7 @@ extension TopicController: UITableViewDataSource {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: TopicNameCell.description(), for: indexPath) as? TopicNameCell ?? .init()
             cell.topic = topic
-            cell.preservesSuperviewLayoutMargins = false
             cell.separatorInset = UIEdgeInsets.zero
-            cell.layoutMargins = UIEdgeInsets.zero
             return cell
 
         case 1:
