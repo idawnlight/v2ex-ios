@@ -84,8 +84,8 @@
 		B2CA8813226DA79500F8B12F /* SignInUsernameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUsernameCell.swift; sourceTree = "<group>"; };
 		B2CA8815226DA97300F8B12F /* SignInPasswordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInPasswordCell.swift; sourceTree = "<group>"; };
 		B2E3704922AB70980072DDCC /* ComposeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComposeController.swift; sourceTree = "<group>"; };
-		B2E6BA7C23364E0000A5F230 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 		B2E85F8E226717F100D20A3F /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		F2F870F027631100009F0F13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,6 +286,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				"zh-Hans",
+				Base,
 			);
 			mainGroup = B24B369A225A27210004BCA0;
 			productRefGroup = B24B36A4225A27210004BCA0 /* Products */;
@@ -415,7 +416,7 @@
 		B24B36AF225A27220004BCA0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B2E6BA7C23364E0000A5F230 /* zh-Hans */,
+				F2F870F027631100009F0F13 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -548,14 +549,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 12;
-				DEVELOPMENT_TEAM = 4ZT4M533K7;
+				DEVELOPMENT_TEAM = 2RR9G6FPAR;
 				INFOPLIST_FILE = V2EX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.4;
-				PRODUCT_BUNDLE_IDENTIFIER = com.secipin.v2ex;
+				PRODUCT_BUNDLE_IDENTIFIER = com.idawnlight.v2ex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -569,14 +570,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 12;
-				DEVELOPMENT_TEAM = 4ZT4M533K7;
+				DEVELOPMENT_TEAM = 2RR9G6FPAR;
 				INFOPLIST_FILE = V2EX/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.4;
-				PRODUCT_BUNDLE_IDENTIFIER = com.secipin.v2ex;
+				PRODUCT_BUNDLE_IDENTIFIER = com.idawnlight.v2ex;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

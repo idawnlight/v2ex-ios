@@ -356,11 +356,17 @@ extension TopicController: UITableViewDataSource {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: TopicNameCell.description(), for: indexPath) as? TopicNameCell ?? .init()
             cell.topic = topic
+            cell.preservesSuperviewLayoutMargins = false
+            cell.separatorInset = UIEdgeInsets.zero
+            cell.layoutMargins = UIEdgeInsets.zero
             return cell
 
         case 1:
             let cell = bodyCell ?? .init()
             cell.topic = topic
+            if commentCells.count == 0 {
+                cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: .greatestFiniteMagnitude)
+            }
             cell.layoutIfNeeded()
             return cell
 
@@ -368,6 +374,7 @@ extension TopicController: UITableViewDataSource {
             let cell = commentCells[indexPath.row]
             cell.comment = topic?.comments?[indexPath.row]
             cell.comment?.index = indexPath.row
+            cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: .greatestFiniteMagnitude)
             cell.layoutIfNeeded()
             return cell
 
@@ -375,6 +382,9 @@ extension TopicController: UITableViewDataSource {
             let cell = replyCells[indexPath.row]
             cell.reply = replies?[indexPath.row]
             cell.reply?.index = indexPath.row
+            if indexPath.row == replyCells.count - 1 {
+                cell.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: .greatestFiniteMagnitude)
+            }
             cell.layoutIfNeeded()
             return cell
 
