@@ -6,6 +6,7 @@
 //  Copyright © 2019 Jianqiu Xiao. All rights reserved.
 //
 
+import SafariServices
 import UIKit
 
 class MoreController: ViewController {
@@ -83,16 +84,13 @@ extension MoreController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
-            let webViewController = WebViewController()
-            webViewController.title = "关于"
-            webViewController.url = baseURL.appendingPathComponent("about")
-            navigationController?.pushViewController(webViewController, animated: true)
+            present(SFSafariViewController(url: baseURL.appendingPathComponent("about")), animated: true)
 
         case 1:
-            let webViewController = WebViewController()
-            webViewController.title = "反馈"
-            webViewController.url = URL(string: "https://github.com/swordray/v2ex-ios/issues")
-            navigationController?.pushViewController(webViewController, animated: true)
+//            url = URL(string: "https://github.com/swordray/v2ex-ios/issues")
+            if let url = URL(string: "https://github.com/swordray/v2ex-ios/issues") {
+                present(SFSafariViewController(url: url), animated: true)
+            }
 
         case 2:
             URLCache.shared.removeAllCachedResponses()

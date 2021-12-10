@@ -23,7 +23,6 @@
 		B24B36CD225C4D770004BCA0 /* TopicNameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24B36CC225C4D770004BCA0 /* TopicNameCell.swift */; };
 		B2536D5022667BC6002E2509 /* SignInCaptchaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2536D4F22667BC6002E2509 /* SignInCaptchaCell.swift */; };
 		B2536D522266D377002E2509 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2536D512266D377002E2509 /* Session.swift */; };
-		B27F7AEC22A7E040003D52C9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B27F7AEB22A7E040003D52C9 /* GoogleService-Info.plist */; };
 		B2971DB6226972DF000C6645 /* TopicCommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2971DB5226972DF000C6645 /* TopicCommentCell.swift */; };
 		B2971DB82269BF75000C6645 /* NodesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2971DB72269BF75000C6645 /* NodesController.swift */; };
 		B2971DBA2269BFB5000C6645 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2971DB92269BFB5000C6645 /* Section.swift */; };
@@ -38,7 +37,6 @@
 		B2B2FEED225F53BC00E5364B /* ActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B2FEEC225F53BC00E5364B /* ActivityIndicatorView.swift */; };
 		B2B2FEEF225F53D500E5364B /* NetworkErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B2FEEE225F53D500E5364B /* NetworkErrorView.swift */; };
 		B2B2FEF1225F53EB00E5364B /* NoContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B2FEF0225F53EB00E5364B /* NoContentView.swift */; };
-		B2B2FEF3225F622500E5364B /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B2FEF2225F622500E5364B /* WebViewController.swift */; };
 		B2CA8810226D848A00F8B12F /* TopicsNodeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CA880F226D848A00F8B12F /* TopicsNodeButton.swift */; };
 		B2CA8812226D97E900F8B12F /* TopicsNodesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CA8811226D97E900F8B12F /* TopicsNodesView.swift */; };
 		B2CA8814226DA79500F8B12F /* SignInUsernameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2CA8813226DA79500F8B12F /* SignInUsernameCell.swift */; };
@@ -67,7 +65,6 @@
 		B24B36CC225C4D770004BCA0 /* TopicNameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicNameCell.swift; sourceTree = "<group>"; };
 		B2536D4F22667BC6002E2509 /* SignInCaptchaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInCaptchaCell.swift; sourceTree = "<group>"; };
 		B2536D512266D377002E2509 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
-		B27F7AEB22A7E040003D52C9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B2971DB5226972DF000C6645 /* TopicCommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicCommentCell.swift; sourceTree = "<group>"; };
 		B2971DB72269BF75000C6645 /* NodesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NodesController.swift; sourceTree = "<group>"; };
 		B2971DB92269BFB5000C6645 /* Section.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
@@ -82,7 +79,6 @@
 		B2B2FEEC225F53BC00E5364B /* ActivityIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicatorView.swift; sourceTree = "<group>"; };
 		B2B2FEEE225F53D500E5364B /* NetworkErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorView.swift; sourceTree = "<group>"; };
 		B2B2FEF0225F53EB00E5364B /* NoContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoContentView.swift; sourceTree = "<group>"; };
-		B2B2FEF2225F622500E5364B /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		B2CA880F226D848A00F8B12F /* TopicsNodeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsNodeButton.swift; sourceTree = "<group>"; };
 		B2CA8811226D97E900F8B12F /* TopicsNodesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsNodesView.swift; sourceTree = "<group>"; };
 		B2CA8813226DA79500F8B12F /* SignInUsernameCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInUsernameCell.swift; sourceTree = "<group>"; };
@@ -137,7 +133,6 @@
 				B24B36A6225A27210004BCA0 /* AppDelegate.swift */,
 				B24B36AD225A27220004BCA0 /* Assets.xcassets */,
 				B24B36B8225A29EA0004BCA0 /* Classes */,
-				B27F7AEB22A7E040003D52C9 /* GoogleService-Info.plist */,
 				B24B36B2225A27220004BCA0 /* Info.plist */,
 				B24B36AF225A27220004BCA0 /* LaunchScreen.storyboard */,
 			);
@@ -165,7 +160,6 @@
 				B24B36BA225A2A070004BCA0 /* TopicsController.swift */,
 				B29F7AA92265A8FE00A6E7DE /* UserController.swift */,
 				B24B36C9225B9E070004BCA0 /* ViewController.swift */,
-				B2B2FEF2225F622500E5364B /* WebViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -278,7 +272,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1020;
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 1310;
 				ORGANIZATIONNAME = "Jianqiu Xiao";
 				TargetAttributes = {
 					B24B36A2225A27210004BCA0 = {
@@ -310,7 +304,6 @@
 			files = (
 				B24B36B1225A27220004BCA0 /* LaunchScreen.storyboard in Resources */,
 				B24B36AE225A27220004BCA0 /* Assets.xcassets in Resources */,
-				B27F7AEC22A7E040003D52C9 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +374,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2B2FEEF225F53D500E5364B /* NetworkErrorView.swift in Sources */,
-				B2B2FEF3225F622500E5364B /* WebViewController.swift in Sources */,
 				B29F7AAA2265A8FE00A6E7DE /* UserController.swift in Sources */,
 				B2B2FEE9225E353F00E5364B /* UIView.swift in Sources */,
 				B24B36CD225C4D770004BCA0 /* TopicNameCell.swift in Sources */,
@@ -457,6 +449,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -518,6 +511,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;

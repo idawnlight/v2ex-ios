@@ -6,7 +6,7 @@
 //  Copyright © 2019 Jianqiu Xiao. All rights reserved.
 //
 
-import Firebase
+//import Firebase
 import Regex
 import SnapKit
 import SwiftDate
@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
-        FirebaseApp.configure()
+//        FirebaseApp.configure()
 
         SwiftDate.defaultRegion = Region(calendar: Calendars.gregorian, zone: Zones.asiaShanghai, locale: Locales.chinese)
 

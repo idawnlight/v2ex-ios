@@ -6,6 +6,7 @@
 //  Copyright © 2019 Jianqiu Xiao. All rights reserved.
 //
 
+import SafariServices
 import UIKit
 import WebKit
 
@@ -109,15 +110,12 @@ extension TopicWebCell: UIWebViewDelegate {
                 topicController.topic = try? Topic(json: ["id": Int(id)])
                 viewController?.navigationController?.pushViewController(topicController, animated: true)
             } else {
-                let webViewController = WebViewController()
-                webViewController.url = viewController?.baseURL.appendingPathComponent(url.path)
-                viewController?.navigationController?.pushViewController(webViewController, animated: true)
+                if let url = viewController?.baseURL.appendingPathComponent(url.path) {
+                    viewController?.present(SFSafariViewController(url: url), animated: true)
+                }
             }
         } else if WKWebView.handlesURLScheme(url.scheme ?? "") {
-            let webViewController = WebViewController()
-            webViewController.title = url.fragment == "imageview" ? "图片" : nil
-            webViewController.url = url
-            viewController?.navigationController?.pushViewController(webViewController, animated: true)
+            viewController?.present(SFSafariViewController(url: url), animated: true)
         } else if UIApplication.shared.canOpenURL(url) {
             UIApplication.shared.open(url)
         }

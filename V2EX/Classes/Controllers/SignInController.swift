@@ -9,6 +9,7 @@
 import Alamofire
 import Kanna
 import KeychainAccess
+import SafariServices
 
 class SignInController: ViewController {
 
@@ -110,10 +111,8 @@ class SignInController: ViewController {
         let alertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
         [("注册", "signup"), ("忘记密码", "forgot")].forEach { title, pathComponent in
             alertController.addAction(UIAlertAction(title: title, style: .default) { _ in
-                let webViewController = WebViewController()
-                webViewController.title = title
-                webViewController.url = self.baseURL.appendingPathComponent(pathComponent)
-                self.navigationController?.pushViewController(webViewController, animated: true)
+                let url = self.baseURL.appendingPathComponent(pathComponent)
+                self.present(SFSafariViewController(url: url), animated: true)
             })
         }
         alertController.addAction(UIAlertAction(title: "取消", style: .cancel))
@@ -221,10 +220,7 @@ extension SignInController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch (indexPath.section, indexPath.row) {
         case (2, 0):
-            let webViewController = WebViewController()
-            webViewController.title = "最终用户许可协议"
-            webViewController.url = baseURL.appendingPathComponent("about")
-            navigationController?.pushViewController(webViewController, animated: true)
+            present(SFSafariViewController(url: baseURL.appendingPathComponent("about")), animated: true)
 
         case (3, 0):
             tableView.deselectRow(at: indexPath, animated: true)
