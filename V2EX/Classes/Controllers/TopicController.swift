@@ -34,10 +34,10 @@ class TopicController: ViewController {
             UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil),
             UIBarButtonItem(barButtonSystemItem: .reply, target: self, action: #selector(showCompose)),
             UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil),
-            UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector(ignore)),
-            UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil),
-            UIBarButtonItem(image: UIImage(systemName: "flag"), style: .plain, target: self, action: #selector(showReport)),
-            UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil),
+//            UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector(ignore)),
+//            UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil),
+//            UIBarButtonItem(image: UIImage(systemName: "flag"), style: .plain, target: self, action: #selector(showReport)),
+//            UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil),
             UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(action)),
         ]
     }
@@ -240,7 +240,7 @@ class TopicController: ViewController {
                 .appendingPathComponent("topic")
                 .appendingPathComponent(String(topic?.id ?? 0)),
             parameters: [
-                "t": topic?.favoriteToken ?? "",
+                "once": topic?.favoriteToken ?? "",
             ],
             headers: [
                 "Referer": baseURL.appendingPathComponent("t").appendingPathComponent(String(topic?.id ?? 0)).absoluteString,
