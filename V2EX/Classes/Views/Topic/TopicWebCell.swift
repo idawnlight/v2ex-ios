@@ -75,13 +75,16 @@ class TopicWebCell: UITableViewCell {
                 var images = document.querySelectorAll('img:not(.emoji):not(.twemoji)')
                 for (var i = 0; i < images.length; i++) {
                     var image = images[i]
+                    if (image.src.startsWith("applewebdata")) image.src = image.src.replace('applewebdata', 'https')
+                    if (image.parentNode.tagName == 'A') continue
                     var a = document.createElement('a')
-                    a.href = image.src + '#imageview'
+                    a.href = image.src
                     image.parentElement.insertBefore(a, image)
                     a.appendChild(image)
                 }
             })
         """
+//        let script = ""
         return """
             <!DOCTYPE html>
             <html>
